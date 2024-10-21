@@ -1,0 +1,32 @@
+﻿@model List<_01_ProjectQuery.Contract.ProductCategory.ProductCategoryQueryModel>
+
+<div class="category-area section-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="category-wrapper">
+                    <div class="row row-10">
+
+                        @foreach (var item in Model)
+                        {
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-process-box">
+                                    <div class="single-category-item__image">
+                                        <a asp-page="/ProductCategory" asp-route-id="@item.Slug">
+                                            <img src="~/ProductPictures/@item.Picture" class="img-fluid" alt="@item.PictureAlt" title="@item.PictureTitle" />
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <a asp-page="/ProductCategory" asp-route-id="@item.Slug">
+                                            @item.Name
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

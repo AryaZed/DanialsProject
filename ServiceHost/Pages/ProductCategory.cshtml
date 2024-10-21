@@ -1,0 +1,91 @@
+﻿@page 
+@model ServiceHost.Pages.ProductCategoryModel
+@{
+    ViewData["Title"] = Model.ProductCategory.Name;
+    ViewData["keywords"] = Model.ProductCategory.Keywords;
+    ViewData["metaDescription"] = Model.ProductCategory.MetaDescription;
+}
+
+
+<div class="products-area ptb-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            @foreach (var product in Model.ProductCategory.Products)
+            {
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-products-box">
+                        <div class="image">
+                            <a asp-page="/Product" asp-route-id="@product.Slug">
+                                <img src="~/ProductPictures/@product.Picture" class="img-fluid"
+                                     alt="@product.PictureAlt" title="@product.PictureTitle">
+                            </a>
+                            <ul class="buttons-list">
+                                <li>
+                                    <a asp-page="/Product" asp-route-id="@product.Slug">@product.Name</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h3><a asp-page="/Product" asp-route-id="@product.Slug">@product.Name</a></h3>
+                        </div>
+                    </div>
+                </div>
+            }
+
+           
+        </div>
+    </div>
+</div>
+
+
+<div class="partner-area ptb-100">
+    <div class="container">
+        <div class="partner-slides owl-carousel owl-theme">
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/1.png" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/2.png" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/3.png" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/4.png" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/5.png" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/6.png" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/7.png" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/8.png" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/9.png" alt="image">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

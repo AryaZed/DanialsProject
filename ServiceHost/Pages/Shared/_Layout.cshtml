@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @if (ViewData["Title"] != null)
+    {
+<title>@ViewData["Title"] - جهان تکنو</title> }
+            else
+            {
+<title>شرکت جهان تکنو</title>}
+
+
+
+
+    <link rel="stylesheet" href="~/assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="~/assets/css/animate.min.css">
+    <link rel="stylesheet" href="~/assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="~/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/assets/css/odometer.min.css">
+    <link rel="stylesheet" href="~/assets/css/rangeSlider.min.css">
+    <link rel="stylesheet" href="~/assets/css/showMoreItems-theme.min.css">
+    <link rel="stylesheet" href="~/assets/css/flaticon.css">
+    <link rel="stylesheet" href="~/assets/css/meanmenu.min.css">
+    <link rel="stylesheet" href="~/assets/css/style.css">
+    <link rel="stylesheet" href="~/assets/css/responsive.css">
+
+    <link href="~/Theme/assets/css/vendors.css" rel="stylesheet">
+    <link href="~/Theme/assets/css/style.css" rel="stylesheet">
+    <link href="~/Theme/assets/css/Custom.css" rel="stylesheet">
+    
+    @*<link href="~/assets/css/bootstrap.rtl.min.css" rel="stylesheet" />*@
+    @*<link href="~/AdminTheme/assets/css/bootstrap.min.css" rel="stylesheet" />*@
+
+    <link rel="icon" type="image/png" href="assets/img/Logo-ViewTitle.jpg">
+</head>
+<body>
+
+    @await Component.InvokeAsync("Menu")
+
+
+    @RenderBody()
+
+
+    @await Component.InvokeAsync("Footer")
+
+    <div class="go-top marketing-color"><i class="fas fa-chevron-up"></i></div>
+
+
+    <script src="~/assets/js/jquery.min.js"></script>
+    <script src="~/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/js/magnific-popup.min.js"></script>
+    <script src="~/assets/js/appear.min.js"></script>
+    <script src="~/assets/js/odometer.min.js"></script>
+    <script src="~/assets/js/parallax.min.js"></script>
+    <script src="~/assets/js/smooth-scroll.js"></script>
+    <script src="~/assets/js/rangeSlider.min.js"></script>
+    <script src="~/assets/js/showMoreItems.min.js"></script>
+    <script src="~/assets/js/mixitup.min.js"></script>
+    <script src="~/assets/js/meanmenu.min.js"></script>
+    <script src="~/assets/js/owl.carousel.min.js"></script>
+    <script src="~/assets/js/form-validator.min.js"></script>
+    <script src="~/assets/js/contact-form-script.js"></script>
+    <script src="~/assets/js/ajaxchimp.min.js"></script>
+    <script src="~/assets/js/main.js"></script>
+    <script src="~/Theme/assets/js/vendors.js"></script>
+    <script src="~/Theme/assets/js/active.js"></script>
+    <script src="~/Theme/assets/js/plugins.js"></script>
+    <script src="~/Theme/assets/js/custom.js"></script>
+</body>
+
+</html>

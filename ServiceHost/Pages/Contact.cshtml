@@ -1,0 +1,161 @@
+﻿@page
+@model ServiceHost.Pages.ContactModel
+@{
+    ViewData["Title"] = "ارتباط با ما";
+}
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/rangeSlider.min.css">
+    <link rel="stylesheet" href="assets/css/showMoreItems-theme.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+</head>
+<body>
+
+    <div id="maps">
+        <iframe src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.1661157248359!2d51.4232968292156!3d35.68526308805247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcde11042ef869acd!2zMzXCsDQxJzA2LjkiTiA1McKwMjUnMjUuOCJF!5e0!3m2!1sen!2s!4v1648896852608!5m2!1sen!2s"></iframe>
+    </div>
+    <section class="contact-area pt-100 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6 col-md-6">
+                            <div class="single-contact-info-box">
+                                <div class="icon">
+                                    <i class='fas fa-map-marker-alt'></i>
+                                </div>
+                                <h3>آدرس </h3>
+                                <p><a href="#" target="_blank">ایران، تهران، امیرکبیر ،سعدی جنوبی ، پلاک 136</a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-md-6">
+                            <div class="single-contact-info-box">
+                                <div class="icon">
+                                    <i class='fas fa-phone-volume'></i>
+                                </div>
+                                <h3>تلفن </h3>
+                                <p><a href="tel:+02133908511">+021-33908511</a></p>
+                                <p><a href="tel:+02133957039">+021-33957039</a></p>
+                                <p><a href="tel:+02133919002">+021-33919002</a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-md-6">
+                            <div class="single-contact-info-box">
+                                <div class="icon">
+                                    <i class='far fa-envelope'></i>
+                                </div>
+                                <h3>ایمیل </h3>
+                                <p><a><span class="__cf_email__" data-cfemail="9df5f8f1f1f2ddf3f2f6f8b3fef2f0">JahanTechno.Tehran@Gmail.com</span></a></p>                           
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-md-6">
+                            <div class="single-contact-info-box">
+                                <div class="icon">
+                                    <i class='fas fa-hourglass-half'></i>
+                                </div>
+                                <h3>ساعات کاری </h3>
+                                <p>شنبه - چهارشنبه</p>
+                                <p>8:00 صبح - 17:00 عصر</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" id="name" required data-error="نام خود را وارد کنید" placeholder="نام کامل ">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" id="email" required data-error="ایمیل خود را وارد کنید " placeholder="آدرس ایمیل ">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" name="phone_number" class="form-control" id="phone_number" required data-error="شماره همراه را وارد کنید" placeholder="شماره موبایل">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" name="msg_subject" class="form-control" id="msg_subject" placeholder="موضوع" required data-error="موضوع خود را وارد کنید">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-group">
+<textarea name="message" id="message" class="form-control" cols="30" rows="6" required data-error="لطفا پیام خود را وارد کنید" placeholder="پیام ..."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="checkme">
+                                        <label class="form-check-label" for="checkme">
+                                            تایید <a href="terms-conditions.html">شرایط خدمات </a> و  <a href="privacy-policy.html">حریم خصوصی </a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <button type="submit" class="default-btn">ارسال پیام </button>
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="go-top"><i class="fas fa-chevron-up"></i></div>
+
+
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/appear.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/rangeSlider.min.js"></script>
+    <script src="assets/js/showMoreItems.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/meanmenu.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+    <script src="assets/js/ajaxchimp.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

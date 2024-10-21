@@ -1,0 +1,117 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "صفحه اصلی";
+}
+
+
+
+
+<div class="marketing-banner-area">
+    <div class="container">
+        <div class="row align-items-center">
+
+            @await Component.InvokeAsync("Slide")
+            @*<div class="shape10"><img src="assets/img/shape/shape10.png" alt="image"></div>*@
+        </div>
+    </div>
+</div>
+
+
+<div class="partner-area ptb-100">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title marketing-color">همکاری ها</span>
+            @*<h2>ما فرآیند اصلی برای اجرای بازاریابی را داریم</h2>*@
+        </div>
+        <div class="partner-slides owl-carousel owl-theme">
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/1.png" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/2.png" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/3.png" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/4.png" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/5.png" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/6.png" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/7.png" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/8.png" alt="image">
+                </a>
+            </div>
+            <div class="partner-item">
+                <a href="#" class="d-inline-block" target="_blank">
+                    <img src="assets/img/partner/9.png" alt="image">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="process-area pb-70">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title marketing-color">محصولات ما</span>
+            @*<h2>ما فرآیند اصلی برای اجرای بازاریابی را داریم</h2>*@
+        </div>
+        <div class="row justify-content-center">
+
+            @await Component.InvokeAsync("ProductCategory")
+
+            @*@await Component.InvokeAsync("ProductCategoryWithProduct")*@
+
+
+        </div>
+    </div>
+</div>
+
+
+<div class="marketing-about-area pb-100">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="marketing-about-image">
+                    <img src="assets/img/about/about-img2.png" alt="image">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="marketing-about-content">
+                    <span class="sub-title">درباره ما</span>
+                    <h2>جهان تکنو</h2>
+                    <p>
+                        جهان تکنو در سال ۱۳۷۴ در مرکز تهران تأسیس شد و کار خود را با تولید واشر، فنر و فروش نخ و ورق های نسوز شروع کرد.
+                        در طول مسیر کسب و کار تا به امروز، جهان تکنو همواره تلاش کرده تا با بالا نگه داشتن استاندارد های تولید و مشتری مداری، بهترین سرویس را به مشتری ارائه دهد و همچنین با ارتقا و پیشرفت خود به سمتی حرکت کند که توانایی تولید بیشتر قطعات صنعتی را داشته باشد.
+                        در طول این ۲۶ سال، جهان تکنو افتخار همکاری با بزرگ ترین و برترین شرکت ها و کارخانه ها در سطح کشور را داشته است، به طوری که با تأمین قطعات و مواد اولیه با کیفیت رضایت ها را جلب کرده و با رفتار حرفه ای در کسب و کار همکاری ها را سال ها تداوم داده است.
+                    </p>
+                    <a asp-page="/About" class="default-btn marketing-color">مطالعه بیشتر <i class="fas fa-chevron-left"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
