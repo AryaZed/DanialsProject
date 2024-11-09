@@ -18,8 +18,8 @@ namespace ProductManagement.Infrastructure.EfCore.Mapping
             builder.Property(x => x.PictureAlt).HasMaxLength(255);
             builder.Property(x => x.PictureTitle).HasMaxLength(500);
 
-            builder.Property(x => x.Keywords).HasMaxLength(100).IsRequired();
-            builder.Property(x => x.MetaDescription).HasMaxLength(150).IsRequired();
+            builder.Property(x => x.Keywords).HasMaxLength(500).IsRequired();
+            builder.Property(x => x.MetaDescription).HasMaxLength(500).IsRequired();
             builder.Property(x => x.Slug).HasMaxLength(500).IsRequired();
 
             builder.HasOne(x => x.Category)
